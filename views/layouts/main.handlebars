@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Forum</title>
+</head>
+
+    <div id="header" class="centered-flex">
+        
+        <div class="left-side-header">
+            <img src="/static_image_files/Novel Insights.png" alt="Site Logo" id="site-logo">
+            <a href="/home/" class="shortcut-button-link"><div class="shortcut-button" id="home-btn">Home</div></a>
+            <a href="" class="shortcut-button-link"><div class="shortcut-button">About</div></a>
+            <a href="/add-book/" class="shortcut-button-link"><div class="shortcut-button">Add Book</div></a>
+        </div>
+            
+        <a id="user-panel" href="/profile/{{email}}">
+        <div  id="user-profile-pic">
+            <img src="{{profilePicURL}}" alt="Profile Picture">
+        </div>
+            <span id="username">{{username}}</span>
+        </a>
+
+    </div>
+
+    {{{body}}}
+
+</html>

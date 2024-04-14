@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap'); /* Archivo */
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* Roboto */
+
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #F6F6FE;
+            font-family: 'Roboto', sans-serif;
+                color: #10182f;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #site-logo{
+            width: 100px;
+        }
+
+        .site-header{
+            background-color: #E6EEF8;
+        }
+
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 10px;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            height: 180px; /* Ensure the card height adjusts based on content */
+        }
+
+        .card-media {
+            width: auto;
+            height: 100%; /* Make the image height equal to the card height */
+            flex-shrink: 0; /* Prevent the image from shrinking */
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        .card-body {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin: 10px 0;
+            font-weight: 800;
+        }
+
+        .card-description {
+            margin-bottom: 10px;
+        }
+
+        .card-author{
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="site-header">
+            <img id="site-logo" src="site-logo.jpg" alt="">
+        </div>
+        <div class="cards-container">
+
+            <div class="card">
+                <img src="Atomic Habits - James Clear/atomic-habits.jpg" alt="" class="card-media" />
+                <div class="card-body">
+                    <!-- <span class="card-number card-circle subtle">01</span> -->
+                    <h3 class="card-title">Atomic Habits</h3>
+                    
+                    <span class="card-description">An Easy & Proven Way to Build Good Habits & Break Bad Ones</span>
+                    <br><br>
+                    <span class="card-author">John Smith</span>
+                    <!-- <span class="card-tag card-circle subtle">C</span> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
